@@ -1,2 +1,6 @@
 Angular Material Tutorial 
-42:54 minutos
+56:20 minutos
+
+
+ng g m components/shared
+ng g m components/dashboart --routing
