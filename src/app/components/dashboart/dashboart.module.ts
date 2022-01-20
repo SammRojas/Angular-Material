@@ -4,16 +4,20 @@ import { CommonModule } from '@angular/common';
 import { DashboartRoutingModule } from './dashboart-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { DashboartComponent } from './dashboart.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
   declarations: [
-    DashboartComponent
+    DashboartComponent,
+    NavbarComponent
   ],
   imports: [
     CommonModule,
     DashboartRoutingModule,
-    SharedModule
+    SharedModule,
+    
+
   ]
 })
 export class DashboartModule { }
