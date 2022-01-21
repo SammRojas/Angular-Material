@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SharedModule } from '../../shared/shared.module';
+import { MenuService } from 'src/app/services/menu.service';
+import { menu } from '../../../interfaces/menu';
 
 
 @Component({
@@ -8,10 +9,19 @@ import { SharedModule } from '../../shared/shared.module';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
-  constructor() { }
+  menu:menu[]=[]
+  constructor(
+    private _menuService : MenuService
+  ) { }
 
   ngOnInit(): void {
+    this.loadMenu()
   }
-
+  loadMenu():void{
+    this._menuService.getMenu().subscribe(data => {
+      console.log(data);
+      this.menu = data
+      
+    })
+  }
 }

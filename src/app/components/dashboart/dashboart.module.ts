@@ -7,17 +7,17 @@ import { DashboartComponent } from './dashboart.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 
+
 @NgModule({
   declarations: [
     DashboartComponent,
-    NavbarComponent
+    NavbarComponent,
+    
   ],
   imports: [
     CommonModule,
     DashboartRoutingModule,
     SharedModule,
-    
-
   ]
 })
 export class DashboartModule { }

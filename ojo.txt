@@ -1,5 +1,5 @@
 Angular Material Tutorial 
-1:07:15 minutos
+1:16:15 minutos
 
 
 ng g m components/shared

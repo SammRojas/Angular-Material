@@ -1,9 +1,9 @@
 <mat-toolbar class="toolbar" color="primary">
   <span>AppUsers</span>
   <span class="space-toolbar"></span>
-  <button mat-button routerLink="/dashboard">Dashboard</button>
-  <button mat-button routerLink="/dashboard/usuarios">Usuarios</button>
-  <button mat-button routerLink="/dashboard/reportes">Reportes</button>
+  <button mat-button *ngFor="let item of menu" [routerLink]='item.redirect'>{{item.nombre}}</button>
+  <!-- <button mat-button routerLink="/dashboard/usuarios">Usuarios</button>
+  <button mat-button routerLink="/dashboard/reportes">Reportes</button> -->
   <span class="space-toolbar"></span>
   <button
     mat-icon-button
