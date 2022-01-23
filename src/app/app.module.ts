@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,6 +8,7 @@ import { SharedModule } from './components/shared/shared.module';
 
 //Componetes
 import { LoginComponent } from './components/login/login.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 
 
@@ -17,7 +18,8 @@ import { LoginComponent } from './components/login/login.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SharedModule
+    SharedModule,
+    MatToolbarModule
     
   ],
   

@@ -1,0 +1,26 @@
+table {
+    width: 100%;
+    margin-top: 15px;
+  }
+.icons{
+    text-align:right ;
+}
+td{    
+    padding: 5px;
+}
+.pointer{
+    cursor: pointer;
+}
+.search{
+    color: royalblue;
+}
+.edit{
+    color: orange;
+}
+.delete{
+    color:#dd1313;
+}
+/* .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  } */

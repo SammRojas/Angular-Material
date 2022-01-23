@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { DashboartModule } from './components/dashboart/dashboart.module';
+import { ReportesComponent } from './components/dashboart/reportes/reportes.component';
 
 const routes: Routes = [
   {path : '', redirectTo: 'login', pathMatch: 'full'},

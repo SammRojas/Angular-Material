@@ -9,7 +9,7 @@
     },
     {
         "nombre":"Reportes",
-        "redirect":"dashboard/reportes"
+        "redirect":"/dashboard/reportes"
     }
     
 ]
