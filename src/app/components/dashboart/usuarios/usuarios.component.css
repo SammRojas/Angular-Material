@@ -20,7 +20,7 @@ td{
 .delete{
     color:#dd1313;
 }
-/* .mat-form-field {
-    font-size: 14px;
-    width: 100%;
-  } */
+.not-fount{
+    text-align: center;
+    margin-top: 90px;
+}
