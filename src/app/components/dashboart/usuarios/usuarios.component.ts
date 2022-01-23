@@ -43,7 +43,11 @@ export class UsuariosComponent implements OnInit {
   }
   deleteUser(index:number):void{
     this._usuarioService.deleteUser(index)
-    this.snackBar.open('Borrado exitosamente')
+    this.snackBar.open('Borrado exitosamente','',{
+      duration : 4000,
+      horizontalPosition:'center',
+    verticalPosition: 'bottom'
+    })
     this.loadUsers()
   }
 }

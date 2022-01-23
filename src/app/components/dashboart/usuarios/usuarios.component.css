@@ -24,3 +24,9 @@ td{
     text-align: center;
     margin-top: 90px;
 }
+.space-toolbar {
+    flex: 1 1 auto;
+  }
+.add{
+    float:inline-end
+}

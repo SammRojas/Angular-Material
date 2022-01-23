@@ -1,8 +1,11 @@
 <div class="container">
     <mat-toolbar>
       <span>My Ususarios</span>
+      <div class="space-toolbar"></div>
+      <button mat-raised-button color="primary" class="add" routerLink="/dashboard/crear-usuario">Crear Usuario</button>
     </mat-toolbar>
     <div *ngIf="listUsuarios.length > 0">
+      
       <mat-form-field appearance="standard">
         <mat-label>Filter</mat-label>
         <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input autocomplete="off">

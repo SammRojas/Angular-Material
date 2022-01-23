@@ -24,4 +24,7 @@ export class UsuarioService {
     this.listUsuarios.splice(index,1); 
     console.log(this.listUsuarios);
   }
+  addUser(user:Usuario):void{
+    this.listUsuarios.unshift(user)
+  }
 }
